@@ -2,7 +2,7 @@
 .home {
     height: 100vh;
     min-height: 500px;
-    background: url(/page/assets/landing.png) no-repeat center;
+    background: url(/page/assets/back.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -18,30 +18,176 @@ a {
     text-decoration: none;
 }
 
-.nav {
-    background-color: #45A5EF;
-    opacity: 0.8;
-    margin-top: 360px;
+
+/* Awal NAVBAR */
+
+.navbar {
+    background-color: #123F6D;
+    opacity: 0.7;
     font-family: raleway;
-    font-size: 25px;
+    font-size: 10px;
+    padding-inline-start: 150px;
+    padding-inline-end: 50px;
+    overflow: hidden;
 }
 
 #navbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: white;
     text-align: center;
-    padding: 14px;
+    padding: 5px;
     text-decoration: none;
 }
 
-.sticky+.content {
-    padding-top: 60px;
+
+/* Page content */
+
+.content {
+    padding: 16px;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #123F6D;
+    opacity: 1;
+}
+
+.sticky+.content {
+    padding-top: 40px;
+}
+
+.navbar .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu-list {
+    display: inline-flex;
+}
+
+.menu-list li {
+    list-style: none;
+}
+
+.menu-list li a {
+    color: #fff;
+    font-size: 20px;
+    margin-left: 70px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-family: raleway;
+}
+
+.menu-list li a:hover {
+    color: #010107;
+}
+
+.about {
+    padding: 30px 0;
+}
+
+.about .title {
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.about p {
+    padding-top: 20px;
+    text-align: justify;
+}
+
+.icon {
+    position: relative;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    display: none;
+    margin-left: -180px;
+}
+
+.menu-list .cancel-btn {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+}
+
+@media (max-width: 1230px) {
+    .content {
+        padding: 0 60px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .content {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 900px) {
+    .content {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 1180px) {
+    body.disabled {
+        overflow: hidden;
+    }
+    .icon {
+        display: block;
+        padding: 0%;
+    }
+    .icon.hide {
+        display: none;
+    }
+    .navbar .menu-list {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        left: -100%;
+        top: 0px;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        background: #222;
+        transition: all 0.3s ease;
+    }
+    .navbar.show .menu-list {
+        left: 0%;
+    }
+    .navbar .menu-list li {
+        margin-top: 45px;
+    }
+    .navbar .menu-list li a {
+        font-size: 23px;
+        margin-left: -100%;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .navbar.show .menu-list li a {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 380px) {
+    .navbar .logo a {
+        font-size: 27px;
+    }
+}
+
+i {
+    padding-left: 10px;
+}
+
+
+/* Akhir NAVBAR */
+
 .logo {
-    width: 23%;
-    padding-top: 40px
+    width: 150px;
 }
 
 #home .inner-width {
@@ -54,18 +200,155 @@ a {
 
 #home .content {
     width: 100%;
-    color: aliceblue;
+    color: rgb(240, 248, 255);
 }
 
 #home h1 {
-    font-size: 80px;
+    font-size: 100px;
+    font-weight: bold;
     font-family: raleway;
-    margin-top: 55px;
-    color: #123F6D;
+    text-shadow: #123F6D;
+    margin-top: 70px;
+    color: #FCB53D;
     text-shadow: 0px 3px 6px #00000029;
     font-weight: bold;
 }
 
 #home h2 {
     font-family: raleway;
+    margin-bottom: 367px;
 }
+
+.imgA {
+    width: 200px;
+}
+
+
+/* Awal Call For Paper */
+
+#About h1 {
+    font-size: 50px;
+    font-family: raleway;
+    margin-top: 55px;
+    color: #123F6D;
+}
+
+
+/* .About {
+    background-color: #B0D5F066;
+    margin-top: -55px
+} */
+
+#About p {
+    font-size: 38px;
+    font-family: raleway;
+}
+
+
+/* Akhir Call For Paper */
+
+
+/* Awal EVENT */
+
+#event {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 59px;
+    color: #123F6D;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+#eventCard {
+    margin-left: auto;
+    width: auto;
+    height: auto;
+    min-height: 700px;
+    min-width: 150px;
+    border-radius: 20px;
+}
+
+#imDate {
+    margin-top: 20px;
+    height: auto;
+    width: auto;
+    margin-bottom: 20px;
+    margin-right: 100px;
+    min-height: 300px;
+    min-width: 150px;
+    border-radius: 20px;
+}
+
+#announce {
+    height: auto;
+    width: auto;
+    margin-right: 100px;
+    min-height: 300px;
+    min-width: 150px;
+    border-radius: 20px;
+}
+
+#button {
+    background-color: #123F6D;
+}
+
+
+/* Akhir Event */
+
+
+/* Awal Keynote */
+
+.speaker {
+    background-color: #B0D5F066;
+}
+
+#speakerCard {
+    margin-left: 120px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+#speakerCard:hover {
+    transform: scale(1.05);
+}
+
+
+/* Akhir Keynote */
+
+
+/* Awal Submission */
+
+.submission {
+    height: 400px;
+    min-height: 70px;
+    background: url(/page/assets/submit-button.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: raleway;
+}
+
+.submission h2 {
+    margin-top: 150px;
+    color: #123F6D;
+}
+
+.submission h3 {
+    color: white
+}
+
+
+/* Akhir Submission */
+
+
+/* Awal topics */
+
+#topics {
+    background-color: #B0D5F066;
+}
+
+
+/* Akhir topics */
