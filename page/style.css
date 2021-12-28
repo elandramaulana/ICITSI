@@ -29,6 +29,7 @@ a {
     padding-inline-start: 150px;
     padding-inline-end: 50px;
     overflow: hidden;
+    z-index: 5;
 }
 
 #navbar a {
@@ -270,6 +271,7 @@ i {
     min-height: 700px;
     min-width: 150px;
     border-radius: 20px;
+    max-width: 100%;
 }
 
 #imDate {
@@ -300,6 +302,67 @@ i {
 /* Akhir Event */
 
 
+/* Awal Topics */
+
+#more {
+    display: none;
+    /* display: ; */
+}
+
+.moreBtn {
+    width: 150px;
+    border-radius: 20px;
+    margin-left: 45%;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+button {
+    width: 400px;
+    word-wrap: break-word;
+    max-width: 100%;
+    position: relative;
+    height: 100px;
+    cursor: pointer;
+    border: none;
+    font-family: 'raleway', cursive;
+    color: black;
+    font-size: 20px;
+    border-radius: 15px;
+    box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 0.5), 0px 0px 10px rgba(0, 0, 0, 0.15);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(45deg, rgba(2, 0, 36, 0) 5%, #123F6D 6%, rgba(255, 255, 255, 0) 9%, #123F6D 10%, rgba(255, 255, 255, 0) 17%, #123F6D 19%, rgba(255, 255, 255, 0) 21%);
+    background-size: 150%;
+    background-position: right;
+    background-color: white;
+    transition: 0.5s;
+    margin-bottom: 20px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+button:hover {
+    background-position: left;
+    color: #123F6D;
+    box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 1), 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+button:focus {
+    outline: none;
+}
+
+
+/* Akhir Topics */
+
+
 /* Awal Keynote */
 
 .speaker {
@@ -307,9 +370,10 @@ i {
 }
 
 #speakerCard {
-    margin-left: 120px;
+    margin-left: 60px;
     margin-top: 40px;
     border-radius: 20px;
+    max-width: 100%;
 }
 
 #speakerCard:hover {
