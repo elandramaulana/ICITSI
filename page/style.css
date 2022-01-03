@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&display=swap');
-.home {
-    height: 100vh;
-    min-height: 500px;
-    background: url(/page/assets/back.jpg) no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&display=swap'); */
+
+html {
+    scroll-behavior: smooth;
 }
 
 * {
@@ -17,6 +14,205 @@
 a {
     text-decoration: none;
 }
+
+
+/* Hero Carousel */
+
+#hero {
+    width: 100%;
+    height: 90vh;
+    background-color: rgba(9, 9, 9, 0.8);
+    overflow: hidden;
+    position: relative;
+}
+
+#hero .carousel,
+#hero .carousel-inner,
+#hero .carousel-item,
+#hero .carousel-item::before {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+#hero .carousel-item::before {
+    background-color: rgba(70, 168, 243, 0.54);
+    opacity: 0.3;
+}
+
+#hero .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 50px;
+    right: 50px;
+}
+
+#hero .container {
+    text-align: center;
+}
+
+#hero h3 {
+    font-family: raleway;
+    margin-top: -80px;
+    font-size: 60px;
+    --bs-text-opacity: 0.4;
+    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+}
+
+#hero h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 120px;
+    font-weight: bolder;
+    font-family: 'Raleway', sans-serif;
+    text-shadow: #123F6D;
+    color: #FCB53D;
+    text-shadow: 0px 3px 6px #00000029;
+    font-weight: bold;
+    text-shadow: 2px 2px #010107;
+    position: relative;
+    height: 100px;
+    z-index: 1;
+}
+
+#hero p {
+    padding-top: 25px;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    margin: 0 auto 30px auto;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+
+#hero .carousel-inner .carousel-item {
+    transition-property: opacity;
+    background-position: center top;
+}
+
+#hero .carousel-inner .carousel-item,
+#hero .carousel-inner .active.carousel-item-start,
+#hero .carousel-inner .active.carousel-item-end {
+    opacity: 0;
+}
+
+#hero .carousel-inner .active,
+#hero .carousel-inner .carousel-item-next.carousel-item-start,
+#hero .carousel-inner .carousel-item-prev.carousel-item-end {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#hero .carousel-control-next-icon,
+#hero .carousel-control-prev-icon {
+    background: none;
+    font-size: 30px;
+    line-height: 0;
+    width: auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0.5);
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hero .carousel-control-next-icon:hover,
+#hero .carousel-control-prev-icon:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#hero .carousel-indicators li {
+    cursor: pointer;
+    background: #fff;
+    overflow: hidden;
+    border: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+#hero .carousel-indicators li.active {
+    opacity: 1;
+    background: #45A5EF;
+}
+
+#hero .btn-get-started {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 4px;
+    transition: 0.5s;
+    line-height: 1;
+    color: #fff;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    background: #45A5EF;
+}
+
+#hero .btn-get-started:hover {
+    background: #45A5EF;
+}
+
+@media (max-width: 992px) {
+    #hero {
+        height: 100vh;
+    }
+    #hero .carousel-container {
+        top: 66px;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero h2 {
+        font-size: 40px;
+    }
+    #hero h3 {
+        font-size: 40px;
+    }
+    #hero p {
+        font-size: 15px;
+    }
+    #hero img {
+        width: 75px;
+        margin-top: -250px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #hero .carousel-control-prev,
+    #hero .carousel-control-next {
+        width: 5%;
+    }
+}
+
+@media (max-height: 500px) {
+    #hero {
+        height: 120vh;
+    }
+}
+
+
+/* akhir Hero carousel */
 
 
 /* Awal NAVBAR */
@@ -188,10 +384,18 @@ i {
 /* Akhir NAVBAR */
 
 .logo {
+    padding-top: 20px;
     width: 150px;
+    margin-top: -190px;
 }
 
-#home .inner-width {
+.imgA {
+    padding-top: 20px;
+    width: 100px;
+    margin-top: -190px;
+}
+
+.home .inner-width {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -199,49 +403,38 @@ i {
     text-align: center;
 }
 
-#home .content {
+.home .content {
     width: 100%;
     color: rgb(240, 248, 255);
 }
 
-#home h1 {
-    font-size: 100px;
-    font-weight: bold;
-    font-family: raleway;
-    text-shadow: #123F6D;
-    margin-top: 70px;
-    color: #FCB53D;
-    text-shadow: 0px 3px 6px #00000029;
-    font-weight: bold;
+@media only screen and (max-width: 320px) {
+    h1 {
+        font-size: 2em;
+    }
 }
 
-#home h2 {
-    font-family: raleway;
-    margin-bottom: 367px;
-}
-
-.imgA {
-    width: 200px;
+.home {
+    max-height: 100%;
 }
 
 
 /* Awal Call For Paper */
 
+#About {
+    background-color: #B0D5F066;
+    padding-bottom: 10px;
+}
+
 #About h1 {
     font-size: 50px;
     font-family: raleway;
-    margin-top: 55px;
     color: #123F6D;
+    padding-top: 100px;
 }
 
-
-/* .About {
-    background-color: #B0D5F066;
-    margin-top: -55px
-} */
-
 #About p {
-    font-size: 38px;
+    font-size: 20px;
     font-family: raleway;
 }
 
@@ -258,6 +451,7 @@ i {
     font-size: 50px;
     line-height: 59px;
     color: #123F6D;
+    background-color: #B0D5F066;
 }
 
 .card:hover {
@@ -283,6 +477,7 @@ i {
     min-height: 300px;
     min-width: 150px;
     border-radius: 20px;
+    background: url(/page/assets/iot.jpg);
 }
 
 #announce {
@@ -294,8 +489,56 @@ i {
     border-radius: 20px;
 }
 
-#button {
+#buttonevent {
     background-color: #123F6D;
+}
+
+.shape {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(180deg, #123F6D, #123F6D 5%);
+    position: absolute;
+    clip-path: ellipse(150px 150px at 10% 5%);
+    -webkit-clip-path: ellipse(300px 100px at 10% 5%);
+}
+
+.event-desc {
+    margin: 0;
+    padding: 0;
+}
+
+.event-desc li {
+    list-style-type: none;
+    border-left: 3px solid;
+    font-size: 18px;
+}
+
+.event-desc li p {
+    margin-left: 10px;
+}
+
+#imDate h4 {
+    color: #FCB53D;
+}
+
+.front h4 {
+    font-size: 20px;
+}
+
+.front li {
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .shape {
+        clip-path: inset(0% 0% 83% 0%);
+        -webkit-clip-path: inset(0% 0% 83% 0%);
+    }
+}
+
+body.modal-open .bg {
+    filter: blur(5px);
 }
 
 
@@ -309,10 +552,14 @@ i {
     /* display: ; */
 }
 
+
+/* #topics {} */
+
 .moreBtn {
     width: 150px;
     border-radius: 20px;
     margin-left: 45%;
+    background-color: #123F6D;
 }
 
 .noselect {
@@ -325,7 +572,7 @@ i {
     -webkit-tap-highlight-color: transparent;
 }
 
-button {
+.buttontopics {
     width: 400px;
     word-wrap: break-word;
     max-width: 100%;
@@ -349,13 +596,13 @@ button {
     padding-right: 8px;
 }
 
-button:hover {
+.buttontopics:hover {
     background-position: left;
     color: #123F6D;
     box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 1), 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 
-button:focus {
+.buttontopics:focus {
     outline: none;
 }
 
@@ -366,11 +613,14 @@ button:focus {
 /* Awal Keynote */
 
 .speaker {
+    font-weight: bold;
+    font-family: raleway;
     background-color: #B0D5F066;
 }
 
 #speakerCard {
-    margin-left: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 40px;
     border-radius: 20px;
     max-width: 100%;
@@ -404,15 +654,15 @@ button:focus {
     color: white
 }
 
+.backs {
+    background-color: rgba(70, 168, 243, 0.54);
+}
+
 
 /* Akhir Submission */
 
 
-/* Awal topics */
-
-#topics {
-    background-color: #B0D5F066;
-}
+/* Awal Comitee */
 
 
-/* Akhir topics */
+/* Akhir comitee */
