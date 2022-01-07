@@ -68,7 +68,7 @@ a {
 
 #hero h3 {
     font-family: raleway;
-    margin-top: -80px;
+    margin-top: 50px;
     font-size: 60px;
     --bs-text-opacity: 0.4;
     color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
@@ -88,10 +88,11 @@ a {
     position: relative;
     height: 100px;
     z-index: 1;
+    padding-top: 150px;
 }
 
 #hero p {
-    padding-top: 25px;
+    margin-top: 200px;
     -webkit-animation-delay: 0.4s;
     animation-delay: 0.4s;
     margin: 0 auto 30px auto;
@@ -102,8 +103,20 @@ a {
 
 #hero h5 {
     color: #fff;
-    z-index: 7;
-    margin-top: 20px;
+    font-size: smaller;
+    margin-top: 230px;
+}
+
+@media (max-width: 768px) {
+    #hero h5 {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero h5 {
+        margin-bottom: 10px;
+    }
 }
 
 #hero .carousel-inner .carousel-item {
@@ -234,7 +247,7 @@ a {
     opacity: 0.7;
     font-family: raleway;
     font-size: 10px;
-    padding-inline-start: 150px;
+    padding-inline-start: 100px;
     padding-inline-end: 50px;
     overflow: hidden;
     z-index: 5;
@@ -284,8 +297,8 @@ a {
 
 .menu-list li a {
     color: #fff;
-    font-size: 20px;
-    margin-left: 70px;
+    font-size: 15px;
+    margin-left: 50px;
     text-decoration: none;
     transition: all 0.3s ease;
     font-family: raleway;
@@ -315,7 +328,7 @@ a {
     font-size: 15px;
     cursor: pointer;
     display: none;
-    margin-left: -180px;
+    margin-left: -120px;
 }
 
 .menu-list .cancel-btn {
@@ -324,7 +337,7 @@ a {
     top: 20px;
 }
 
-@media (max-width: 1230px) {
+@media (max-width: 1200px) {
     .content {
         padding: 0 60px;
     }
@@ -370,10 +383,10 @@ a {
         left: 0%;
     }
     .navbar .menu-list li {
-        margin-top: 45px;
+        margin-top: 35px;
     }
     .navbar .menu-list li a {
-        font-size: 23px;
+        font-size: 20px;
         margin-left: -100%;
         transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
@@ -396,13 +409,13 @@ i {
 /* Akhir NAVBAR */
 
 .logo {
-    padding-top: 20px;
+    padding-top: 250px;
     width: 150px;
     margin-top: -190px;
 }
 
 .imgA {
-    padding-top: 20px;
+    padding-top: 250px;
     width: 100px;
     margin-top: -190px;
 }
@@ -472,7 +485,7 @@ i {
     font-size: 50px;
     line-height: 59px;
     color: #123F6D;
-    background-color: #B0D5F066;
+    /* background-color: #B0D5F066; */
 }
 
 .card:hover {
@@ -498,10 +511,21 @@ i {
     min-height: 300px;
     min-width: 150px;
     border-radius: 20px;
-    background: url(/page/assets/date.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 70%;
+}
+
+@media (max-width: 768px) {
+    #imDate h4 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #imDate li {
+        font-size: 15px;
+    }
 }
 
 #announce {
@@ -576,6 +600,10 @@ i {
 #more {
     display: none;
     /* display: ; */
+}
+
+#topics {
+    background-color: #B0D5F066
 }
 
 #topicsCard {
@@ -682,22 +710,152 @@ i {
 .submission h2 {
     margin-top: 150px;
     color: #123F6D;
+    padding-left: 60px;
 }
 
 .submission h3 {
-    color: white
+    color: white;
+    padding-left: 60px;
+}
+
+@media (max-width: 768px) {
+    .submission h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .submission h3 {
+        font-size: 15px;
+    }
 }
 
 .backs {
     background-color: rgba(70, 168, 243, 0.54);
-    border-radius: 20px;
+}
+
+#submission .btn {
+    margin-left: 60px;
+    background-color: #123F6D;
 }
 
 
 /* Akhir Submission */
 
 
-/* Awal Comitee */
+/* Awal Registration */
+
+.regis {
+    height: 400px;
+    min-height: 70px;
+    background: url(/page/assets/filling-a-form.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: raleway;
+}
+
+.regis h2 {
+    margin-top: 150px;
+    color: #123F6D;
+    padding-right: 60px;
+}
+
+.regis h3 {
+    color: white;
+    padding-right: 60px;
+}
+
+#regis .btn {
+    margin-right: 60px;
+    background-color: #123F6D;
+}
+
+@media (max-width: 768px) {
+    .regis h2 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .regis h3 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    #regis a {
+        width: 300px;
+        margin-left: 60px;
+    }
+}
+
+#regis a {
+    width: 350px;
+}
 
 
-/* Akhir comitee */
+/* Akhir Registration */
+
+
+/* Awal shedule */
+
+#schedule {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 59px;
+    color: #123F6D;
+    /* background-color: #B0D5F066; */
+}
+
+#scheduleCard {
+    height: auto;
+    width: auto;
+    min-height: 300px;
+    min-width: 150px;
+    border-radius: 20px;
+}
+
+
+/* Akhir schedule */
+
+
+/* Awal information */
+
+#info {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 59px;
+    color: #123F6D;
+    margin-bottom: 50px;
+    /* background-color: #B0D5F066; */
+}
+
+
+/* Alhir information */
+
+
+/* footer */
+
+#footer {
+    background-color: #123F6D;
+}
+
+img {
+    width: 200px;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    #footer img {
+        width: 100px;
+        margin-bottom: 30px;
+        margin-right: 110px;
+    }
+}
+
+
+/* footer */
