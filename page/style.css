@@ -970,6 +970,20 @@ i {
     /* background-color: #B0D5F066; */
 }
 
+@media (max-width: 768px) {
+    #info h4 {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    #info p {
+        font-size: 15px;
+        padding: 10px;
+    }
+}
+
 
 /* Alhir information */
 
@@ -995,6 +1009,20 @@ i {
     font-family: Raleway;
     font-size: 25px;
     font-style: italic;
+}
+
+@media (max-width: 768px) {
+    #comite th {
+        font-size: 12px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+    #comite td {
+        font-size: 10px;
+        padding: 5px;
+    }
 }
 
 
