@@ -108,7 +108,6 @@ a {
     color: #fff;
     font-size: smaller;
     margin-top: 120px;
-    text-shadow: #123F6D;
     text-shadow: 0 4px 7px #010107;
 }
 
@@ -472,16 +471,17 @@ i {
 /* Awal Call For Paper */
 
 #About {
-    background-color: #B0D5F066;
+    /* background-color: #B0D5F066; */
     padding-bottom: 10px;
     padding-top: 0px;
+    padding-bottom: 100px;
 }
 
 #About h1 {
     font-size: 50px;
     font-family: raleway;
     color: #123F6D;
-    padding-top: 100px;
+    margin-top: 200px;
 }
 
 #About p {
@@ -495,6 +495,31 @@ i {
     }
     #About h1 {
         font-size: 27px;
+        margin-top: 80px;
+    }
+}
+
+.fyler {
+    width: 80%;
+    /* background-color: #B0D5F066; */
+    margin-right: 200px;
+}
+
+#fyler {
+    /* background-color: #B0D5F066; */
+    padding-top: 16px;
+}
+
+@media (max-width: 768px) {
+    .fyler {
+        width: 100%;
+        margin-top: -100px;
+    }
+    #fyler {
+        background-color: #B0D5F066;
+        padding-top: 16px;
+        margin-right: -26px;
+        margin-left: -26px;
     }
 }
 
@@ -1038,26 +1063,36 @@ i {
 
 #comite td {
     font-family: Raleway;
-    font-size: 20px;
+    font-size: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
 }
 
 #comite th {
     font-family: Raleway;
-    font-size: 25px;
+    font-size: 17px;
     font-style: italic;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 10px;
 }
 
 @media (max-width: 768px) {
     #comite th {
         font-size: 12px;
-        padding: 5px;
+        padding-left: 5px;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 }
 
 @media (max-width: 768px) {
     #comite td {
         font-size: 10px;
-        padding: 5px;
+        padding-left: 5px;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 }
 
