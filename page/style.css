@@ -481,7 +481,7 @@ i {
     font-size: 50px;
     font-family: raleway;
     color: #123F6D;
-    margin-top: 200px;
+    margin-top: 0px;
 }
 
 #About p {
@@ -500,7 +500,7 @@ i {
 }
 
 .fyler {
-    width: 80%;
+    width: 70%;
     /* background-color: #B0D5F066; */
     margin-right: 200px;
 }
@@ -1027,8 +1027,7 @@ i {
     font-size: 50px;
     line-height: 59px;
     color: #123F6D;
-    margin-bottom: 50px;
-    /* background-color: #B0D5F066; */
+    margin-bottom: 100px;
 }
 
 @media (max-width: 768px) {
@@ -1058,41 +1057,32 @@ i {
     font-size: 50px;
     line-height: 59px;
     color: #123F6D;
-    background-color: #B0D5F066;
 }
 
-#comite td {
+#comitee td {
     font-family: Raleway;
-    font-size: 15px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 10px;
+    font-size: 18px;
+    padding: 6px;
 }
 
-#comite th {
+#comitee th {
     font-family: Raleway;
-    font-size: 17px;
+    font-size: 20px;
     font-style: italic;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 10px;
+    padding: 6px;
 }
 
 @media (max-width: 768px) {
-    #comite th {
+    #comitee th {
         font-size: 12px;
-        padding-left: 5px;
-        padding-top: 0px;
-        padding-bottom: 0px;
+        padding: 6px;
     }
 }
 
 @media (max-width: 768px) {
-    #comite td {
+    #comitee td {
         font-size: 10px;
-        padding-left: 5px;
-        padding-top: 0px;
-        padding-bottom: 0px;
+        padding: 6px;
     }
 }
 
@@ -1110,16 +1100,16 @@ i {
     font-size: 12px;
 }
 
-img {
+#footer img {
     width: 200px;
     margin-top: 30px;
 }
 
 @media (max-width: 768px) {
     #footer img {
-        width: 100px;
+        width: auto;
         margin-bottom: 30px;
-        margin-right: 110px;
+        margin-right: 100px;
     }
 }
 
