@@ -136,16 +136,15 @@ a {
     }
 }
 
-@media (max-width: 768px) {
-    .tgl {
-        color: #fff;
-        margin-top: 170px;
-    }
+.tgl img {
+    width: 300px;
 }
 
 @media (max-width: 768px) {
-    #tgl img {
-        width: 400px;
+    .tgl img {
+        padding: 50px;
+        padding-top: 230px;
+        padding-left: 30px;
     }
 }
 
@@ -235,6 +234,7 @@ a {
         font-size: 15px;
         text-shadow: 0 4px 7px #010107;
         /* margin-bottom: 100px; */
+        z-index: -1;
     }
     /* #hero h4 {
         font-size: 15px;
@@ -361,6 +361,12 @@ a {
     top: 20px;
 }
 
+@media (max-width: 1800px) {
+    .content {
+        padding: 0 80px;
+    }
+}
+
 @media (max-width: 1200px) {
     .content {
         padding: 0 60px;
@@ -392,7 +398,7 @@ a {
     }
     .navbar .menu-list {
         position: fixed;
-        height: 100vh;
+        height: 100%;
         width: 100%;
         max-width: 400px;
         left: -100%;
@@ -567,24 +573,6 @@ i {
     background-size: 70%;
 }
 
-@media (max-width: 768px) {
-    #imDate {
-        width: 325px;
-    }
-}
-
-@media (max-width: 768px) {
-    #imDate h4 {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    #imDate li {
-        font-size: 15px;
-    }
-}
-
 #announce {
     height: auto;
     width: auto;
@@ -620,10 +608,6 @@ i {
 
 .event-desc li p {
     margin-left: 10px;
-}
-
-#imDate h4 {
-    color: #FCB53D;
 }
 
 .front h4 {
@@ -787,7 +771,7 @@ i {
 }
 
 .buttonmod1 {
-    width: 300px;
+    width: 100%;
     height: 120px;
     cursor: pointer;
     border: none;
@@ -1006,6 +990,28 @@ i {
     /* background-color: #B0D5F066; */
 }
 
+#scheduleCard h4 {
+    color: #FCB53D;
+}
+
+@media (max-width: 768px) {
+    #scheduleCard {
+        width: 325px;
+    }
+}
+
+@media (max-width: 768px) {
+    #scheduleCard h4 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #scheduleCard li {
+        font-size: 15px;
+    }
+}
+
 #scheduleCard {
     height: auto;
     width: auto;
@@ -1106,10 +1112,9 @@ i {
 }
 
 @media (max-width: 768px) {
-    #footer img {
-        width: auto;
+    #log img {
+        padding-right: 110px;
         margin-bottom: 30px;
-        margin-right: 100px;
     }
 }
 
