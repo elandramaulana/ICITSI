@@ -821,6 +821,15 @@
             font-family: raleway;
         }
         
+        #speaker img {
+            border-radius: 50%;
+        }
+        
+        .profile {
+            width: 210px;
+            margin-top: 15px;
+        }
+        
         #speak h1 {
             font-size: 50px;
             font-family: raleway;
