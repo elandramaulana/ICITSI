@@ -100,6 +100,16 @@
             text-shadow: 0 4px 7px #010107;
         }
         
+        #hero .theme {
+            margin-top: 0px;
+            font-size: 20px;
+            -webkit-animation-delay: 0.4s;
+            animation-delay: 0.4s;
+            color: #fff;
+            font-family: 'Raleway', sans-serif;
+            text-shadow: 0 4px 7px #010107;
+        }
+        
         #hero h5 {
             color: #fff;
             font-size: smaller;
@@ -264,7 +274,7 @@
             opacity: 0.7;
             font-family: raleway;
             font-size: 10px;
-            padding-inline-start: 100px;
+            padding-inline-start: 50px;
             padding-inline-end: 0px;
             overflow: hidden;
             z-index: 5;
@@ -418,7 +428,7 @@
         
         @media (max-width: 720px) {
             .icon {
-                margin-left: -100px;
+                margin-left: -100%;
             }
         }
         
@@ -821,6 +831,30 @@
             font-family: raleway;
         }
         
+        #speaker .speech {
+            margin-left: 25%;
+        }
+        
+        @media (max-width: 768px) {
+            #speaker .speech {
+                margin-left: 0px;
+                margin-right: -200px;
+            }
+        }
+        
+        #speaker-title h3 {
+            margin-top: 50px;
+            font-size: 40px;
+        }
+        
+        #op-title {
+            margin-top: 15px;
+            margin-bottom: 15px;
+            text-shadow: 0 0px 1px #010107;
+            font-weight: bold;
+            font-size: 27px;
+        }
+        
         #speaker img {
             border-radius: 50%;
         }
@@ -980,14 +1014,10 @@
             }
         }
         
-        @media (max-width: 768px) {
-            #regis a {
-                width: 300px;
-            }
-        }
-        
         #regis a {
-            width: 61%;
+            background-color: #123F6D;
+            padding: 10px;
+            border-radius: 7px;
         }
         
         @media (max-width: 768px) {
@@ -1167,9 +1197,8 @@
             font-size: 12px;
         }
         
-        #footer img {
-            width: 200px;
-            margin-top: 30px;
+        #log img {
+            width: 80%;
         }
         
         @media (max-width: 768px) {
