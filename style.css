@@ -132,6 +132,15 @@
                 font-size: 15px;
                 margin-left: 25%;
             }
+            #hero .theme {
+                margin-top: 0px;
+                font-size: 15px;
+                -webkit-animation-delay: 0.4s;
+                animation-delay: 0.4s;
+                color: #fff;
+                font-family: 'Raleway', sans-serif;
+                text-shadow: 0 4px 7px #010107;
+            }
         }
         
         @media (max-width: 768px) {
