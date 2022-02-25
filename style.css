@@ -16,6 +16,10 @@
         }
         /* Hero Carousel */
         
+        section {
+            padding-bottom: -200px;
+        }
+        
         #hero {
             width: 100%;
             height: 90vh;
@@ -693,15 +697,15 @@
         #topicsCard {
             height: auto;
             width: auto;
-            min-height: 200px;
-            min-width: 150px;
+            max-height: 200px;
+            min-width: 15px;
             border-radius: 20px;
             margin-bottom: 20px;
             cursor: pointer;
         }
         
         #topicsCard h2 {
-            padding-top: 120px;
+            padding-top: 90px;
             padding-left: 30px;
             font-family: raleway;
             color: #fff;
@@ -841,7 +845,7 @@
         }
         
         #speaker .speech {
-            margin-left: 25%;
+            margin-left: 15%;
         }
         
         @media (max-width: 768px) {
@@ -974,6 +978,7 @@
         .backs {
             background-color: rgba(70, 168, 243, 0.54);
             border-radius: 15px;
+            max-height: 200px;
         }
         /* Akhir Submission */
         /* Awal Registration */
