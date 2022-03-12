@@ -69,7 +69,7 @@
         #hero h1 {
             font-family: 'Raleway', sans-serif;
             font-size: 45px;
-            margin-left: 33%;
+            /* margin-left: 33%; */
             margin-top: -8px;
             color: #FCB53D;
             font-weight: bolder;
@@ -705,7 +705,7 @@
         }
         
         #topicsCard h2 {
-            padding-top: 90px;
+            padding-top: 80px;
             padding-left: 30px;
             font-family: raleway;
             color: #fff;
@@ -716,6 +716,7 @@
             font-family: raleway;
             color: #fff;
             text-shadow: 4px 3px 6px #00000029;
+            margin-right: 30px;
         }
         /* @media (max-width: 768px) {
     #topicsCard h4 {
@@ -1212,7 +1213,7 @@
         }
         
         #log img {
-            width: 80%;
+            width: 60%;
         }
         
         @media (max-width: 768px) {
@@ -1220,5 +1221,14 @@
                 padding-right: 30%;
                 margin-bottom: 30px;
             }
+        }
+        
+        .fa {
+            padding: 10px;
+            font-size: 30px;
+            width: 40px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
         }
         /* footer */
